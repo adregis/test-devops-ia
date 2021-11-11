@@ -126,9 +126,15 @@ O grafana pode ser acessado pela interface web com a URL do Loadbalancer, com us
 
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana1.png?raw=true "Grafana Login")
 
-O sistema possui alguns dashboard pré-configurado como o que exibe os recursos utilizados no Cluster:
+Dashboard que exibe os recursos utilizados no Cluster:
 
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana2.png?raw=true "Grafana Dashboard")
+
+Serviço Prometheus:
+
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/prom.png?raw=true "Grafana Dashboard")
+
+
 
 
 ### Step 3
