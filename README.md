@@ -103,11 +103,34 @@ Adicionar o Prometheus community helm chart ao Kubernetes:
 
 Instalar o kube-prometheus-stack com o comando:
 
->helm install stable prometheus-community/kube-prometheus-stack
+>helm install stable prometheus-community/kube-prometheus-stack -n monitoring --create-namespace
 
-Por padrão o service do Prometheus e Grafana são acessados somente na rede interna o cluster.
+Por padrão o service do Prometheus e Grafana são acessados somente na rede interna do cluster.
 
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/service.jpeg?raw=true "Service prometheus e grafana")
+
+É necessario alterar o tipo de serviço de ClusterIP para LoadBalancer no serviço do Grafana para liberar acesso externo ao sistema:
+
+> kubectl edit svc prometheus-grafana -n monitoring 
+
+Com o endereço disponibilizado pelo Kubernetes o serviço já pode ser acessado externamente:
+
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/service-grafana.jpeg?raw=true "Service grafana")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
