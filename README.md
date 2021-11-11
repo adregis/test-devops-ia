@@ -29,7 +29,7 @@ Requisitos para a configuração:
 - AWS IAM authenticator
 - kubectl
 
-O ambinete possui um node com kubernetes 1.21.4, uma VPC e tres sub-redes privadas, tres públicas e um Gateway NAT
+O ambinete possui um node com kubernetes 1.21.4, uma VPC, tres sub-redes privadas, tres públicas e um Gateway NAT
 
 Para iniciar a configuração do ambiente é necessario baixar o projeto do repositorio e executar os comandos do terraform:
 
@@ -59,6 +59,19 @@ Requisitos para a configuração:
 - kubernetes Dashboard
 - Prometheus 
 - Grafana
+
+Instalação e configuração do kubernetes Dashboard, ferramenta para verificar saude do cluster e consumo dos recursos:
+
+### Download e unzip do metrics server:
+wget -O v0.3.6.tar.gz https://codeload.github.com/kubernetes-sigs/metrics-server/tar.gz/v0.3.6 && tar -xzf v0.3.6.tar.gz
+
+### Deploy do metrics server no cluster
+kubectl apply -f metrics-server-0.3.6/deploy/1.8+/
+
+### Deploy dos recursos necessarios para o Dashboard:kubectl 
+apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+
+
 
 
 
