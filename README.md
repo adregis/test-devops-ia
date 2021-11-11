@@ -11,8 +11,9 @@ Recursos:
 - Prometheus 
 - Grafana
 - AWS
-- Pthon
+- Python
 - Flask
+- Helm
 
 
 Steps:
@@ -59,6 +60,7 @@ Requisitos para a configuração:
 - kubernetes Dashboard
 - Prometheus 
 - Grafana
+- Helm
 
 Instalação e configuração do kubernetes Dashboard, ferramenta para verificar saude do cluster e consumo dos recursos:
 
@@ -79,4 +81,16 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/eks-dash.png?raw=true "Dashboard")
 
 
+Instalaçao e configuração da stack de monitoramento com Prometheus e Grafana
+
+####Prometheus 
+um sistema de coleta de métricas de aplicações e serviços para armazenamento que utiliza banco de dados de séries temporais.
+
+####Grafana
+uma solução de análise e observabilidade que suporta vários sistemas de coleta e métricas. Quando integrada ao Prometheus, serve para exibir métricas em painéis úteis para diferentes áreas e necessiades.
+
+A configuração foi realizada utilizando o helm com o pacote disponibilizado pela prometheus-community
+
+Adicionar repositorio do helm atualizado
+$helm repo add stable https://charts.helm.sh/stable
 
