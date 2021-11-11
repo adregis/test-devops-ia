@@ -157,6 +157,10 @@ Deploy da aplicação utilizando os arquivos deployment.yaml e service.yaml
 
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/app1.jpeg?raw=true "kubectl")
 
+Aplicação disponibilizada:
+
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/app2.jpeg?raw=true "kubectl")
+
 
 
 
