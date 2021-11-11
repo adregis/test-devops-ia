@@ -50,7 +50,7 @@ terraform plan
 terraform apply
 
 
-![Alt text](https://github.com/adregis/test-devops-ia/blob/main/eks1.png?raw=true "Console EKS")
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/eks1.png?raw=true "Console EKS")
 
 
 ### Step 2
