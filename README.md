@@ -26,19 +26,21 @@ Requisitos para a configuração:
 
 O ambinete possui um node com kubernetes 1.21
 Para iniciar a configuração do ambiente é necessario baixar o projeto do repositorio e executar os comandos do terraform:
+
 git clone https://github.com/adregis/test-devops-ia.git
+
 cd terraform
 
-# Iniciar o terraform e os adicionar os arquivos de estado que ira controlar as alterações dos recursos:
+### Iniciar o terraform e os adicionar os arquivos de estado que ira controlar as alterações dos recursos:
 terraform init
 
-# Validar o arquivo de configuração:
+### Validar o arquivo de configuração:
 terraform validate
 
-# Realiza uma simulação detalhando todos os recursos que sera criado:
+### Realiza uma simulação detalhando todos os recursos que sera criado:
 terraform plan
 
-## Para criar os recursos executar:
+### Para criar os recursos executar:
 terraform apply
 
 
