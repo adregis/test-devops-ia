@@ -38,7 +38,7 @@ terraform validate
 # Realiza uma simulação detalhando todos os recursos que sera criado:
 terraform plan
 
-# Para criar os recursos executar:
+## Para criar os recursos executar:
 terraform apply
 
 
