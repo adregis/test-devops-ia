@@ -14,12 +14,14 @@ Recursos:
 - Python
 - Flask
 - Helm
+- Docker
 
 
 Steps:
 
-1 - Provisionar cluster EKS na AWS executando terraform
-2 - Configurar ambiente de monitoramento
+1 - Provisionar cluster EKS na AWS executando terraform;
+2 - Configurar ambiente de monitoramento Dashboard, Prometheus e Grafana;
+3 - Realizar deploy da aplicação Demo
 
 
 ### Step 1
