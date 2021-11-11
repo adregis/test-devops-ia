@@ -83,11 +83,13 @@ Instalação e configuração do kubernetes Dashboard, ferramenta para verificar
 
 Instalaçao e configuração da stack de monitoramento com Prometheus e Grafana
 
-###Prometheus 
-um sistema de coleta de métricas de aplicações e serviços para armazenamento que utiliza banco de dados de séries temporais.
+###Prometheus
+
+Um sistema de coleta de métricas de aplicações e serviços para armazenamento que utiliza banco de dados de séries temporais.
 
 ###Grafana
-uma solução de análise e observabilidade que suporta vários sistemas de coleta e métricas. Quando integrada ao Prometheus, serve para exibir métricas em painéis úteis para diferentes áreas e necessiades.
+
+Uma solução de análise e observabilidade que suporta vários sistemas de coleta e métricas. Quando integrada ao Prometheus, serve para exibir métricas em painéis úteis para diferentes áreas e necessiades.
 
 A configuração foi realizada utilizando o helm com o pacote disponibilizado pela prometheus-community
 
