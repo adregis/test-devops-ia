@@ -92,5 +92,8 @@ uma solução de análise e observabilidade que suporta vários sistemas de cole
 A configuração foi realizada utilizando o helm com o pacote disponibilizado pela prometheus-community
 
 Adicionar repositorio do helm atualizado
-$helm repo add stable https://charts.helm.sh/stable
+
+>helm repo add stable https://charts.helm.sh/stable
+
+
 
