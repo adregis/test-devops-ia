@@ -120,6 +120,11 @@ Com o endereço disponibilizado pelo Kubernetes o serviço já pode ser acessado
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/service-grafana.jpeg?raw=true "Service grafana")
 
 
+O grafana pode ser acessado pela interface web com a URL do Loadbalancer, com usuario admin e senha prom-operator.
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana1.png?raw=true "Grafana Login")
+
+O sistema possui alguns dashboard pré-configurado, como o que exibe os recursos utilizados no Cluster:
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana2.png?raw=true "Grafana Dashboar")
 
 
 
