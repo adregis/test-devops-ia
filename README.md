@@ -1,6 +1,6 @@
 Teste Devops IA 
 
-Autor Adriano Regis
+Autor: Adriano Régis
 
 Recursos:
 - Terraform v0.14.3
@@ -20,7 +20,9 @@ Recursos:
 Steps:
 
 1 - Provisionar cluster EKS na AWS executando terraform;
+
 2 - Configurar ambiente de monitoramento Dashboard, Prometheus e Grafana;
+
 3 - Realizar deploy da aplicação Demo
 
 
@@ -120,14 +122,28 @@ Com o endereço disponibilizado pelo Kubernetes o serviço já pode ser acessado
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/service-grafana.jpeg?raw=true "Service grafana")
 
 
-O grafana pode ser acessado pela interface web com a URL do Loadbalancer, com usuario admin e senha prom-operator.
+O grafana pode ser acessado pela interface web com a URL do Loadbalancer, com usuario admin e senha prom-operator:
+
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana1.png?raw=true "Grafana Login")
 
-O sistema possui alguns dashboard pré-configurado, como o que exibe os recursos utilizados no Cluster:
+O sistema possui alguns dashboard pré-configurado como o que exibe os recursos utilizados no Cluster:
+
 ![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana2.png?raw=true "Grafana Dashboar")
 
 
+### Step 3
 
+Requisitos para a configuração:
+- Python
+- Flask
+- Docker
+
+Os arquivos utilizados para o Lab estão no diretorio APP no projeto.
+Foi configurado uma aplicação simples escrita em python utilizando o Flask framework que retorna Site - Teste OK!.
+Criado o Dockerfile e o arquivo docker-compose.yml para realizar testes em conteiner, depois realizado o processo de geração da imagem e disponibilidade no Docker Hub:
+
+> docker build -t adregis/app-teste:v1 .
+> docker push adregis/app-teste:v1
 
 
 
