@@ -173,7 +173,13 @@ Painel básico para monitoramento da aplicação:
 
 
 
+Links do ambiente:
+Prometheus: http://a2d8e62c7a29f493b8d1f9819343c5da-1178559183.us-east-2.elb.amazonaws.com:9090/
 
+Grafana: http://a72c87d230a9748f7beb651cfb955ccd-58546513.us-east-2.elb.amazonaws.com/
+Login: admin senha prom-operator
+
+Aplicação: http://a8773dc342d074d1ead65fc74cc347e6-1409379105.us-east-2.elb.amazonaws.com/
 
 
 
