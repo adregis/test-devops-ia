@@ -71,7 +71,7 @@ kubectl apply -f metrics-server-0.3.6/deploy/1.8+/
 ### Deploy dos recursos necessarios para o Dashboard:kubectl 
 apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
 
-### Necessario criar proxy server para acessar o dashboard e gerar ClusterRoleBinding que dar acesso ao token e e cria as permissões necessarias de autenticação:  
+### Necessario criar proxy server para acessar o dashboard e configurar ClusterRoleBinding para visualizar o token e criar as permissões necessarias de autenticação:  
 kubectl proxy
 
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep service-controller-token | awk '{print $1}')
