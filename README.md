@@ -44,3 +44,4 @@ terraform plan
 terraform apply
 
 
+![alt text]https://github.com/adregis/test-devops-ia/blob/main/eks1.png?raw=true)
