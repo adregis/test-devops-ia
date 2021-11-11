@@ -128,7 +128,7 @@ O grafana pode ser acessado pela interface web com a URL do Loadbalancer, com us
 
 O sistema possui alguns dashboard pré-configurado como o que exibe os recursos utilizados no Cluster:
 
-![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana2.png?raw=true "Grafana Dashboar")
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/grafana2.png?raw=true "Grafana Dashboard")
 
 
 ### Step 3
@@ -138,15 +138,24 @@ Requisitos para a configuração:
 - Flask
 - Docker
 
-Os arquivos utilizados para o Lab estão no diretorio APP no projeto.
-Foi configurado uma aplicação simples escrita em python utilizando o Flask framework que retorna Site - Teste OK!.
-Criado o Dockerfile e o arquivo docker-compose.yml para realizar testes em conteiner, depois realizado o processo de geração da imagem e disponibilidade no Docker Hub:
+Os arquivos utilizados para o Lab estão no diretorio APP do projeto.
+
+Configurado uma aplicação simples em python utilizando o Flask framework que retorna Site - Teste OK!.
+build imagem utilizando Dockerfile.
+Publicar imagem no Docker Hub.
 
 > docker build -t adregis/app-teste:v1 .
+
 > docker push adregis/app-teste:v1
 
 
+Deploy da aplicação utilizando os arquivos deployment.yaml e service.yaml
 
+> kubectl apply -f deployment.yaml 
+
+> kubectl apply -f service.yaml
+
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/app1.jpeg?raw=true "kubectl")
 
 
 
