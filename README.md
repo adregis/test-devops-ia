@@ -83,19 +83,38 @@ Instalação e configuração do kubernetes Dashboard, ferramenta para verificar
 
 Instalaçao e configuração da stack de monitoramento com Prometheus e Grafana
 
-###Prometheus
+#### Prometheus
 
 Um sistema de coleta de métricas de aplicações e serviços para armazenamento que utiliza banco de dados de séries temporais.
 
-###Grafana
+#### Grafana
 
 Uma solução de análise e observabilidade que suporta vários sistemas de coleta e métricas. Quando integrada ao Prometheus, serve para exibir métricas em painéis úteis para diferentes áreas e necessiades.
 
 A configuração foi realizada utilizando o helm com o pacote disponibilizado pela prometheus-community
 
-Adicionar repositorio do helm atualizado
+Adicionar repositorio do helm atualizado:
 
 >helm repo add stable https://charts.helm.sh/stable
+
+Adicionar o Prometheus community helm chart ao Kubernetes:
+
+>helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+Instalar o kube-prometheus-stack com o comando:
+
+>helm install stable prometheus-community/kube-prometheus-stack
+
+Por padrão o service do Prometheus e Grafana são acessados somente na rede interna o cluster.
+
+![Alt text](https://github.com/adregis/test-devops-ia/blob/main/imagens/service.jpeg?raw=true "Service prometheus e grafana")
+
+
+
+
+
+
+
 
 
 
